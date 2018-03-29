@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width initial-scale=1">
+<meta name="description" content="Magento RS je sajt informativnog sadržaja na srpskom jeziku kao podrška zvaničnom sajtu Magento.">
+<meta name="keywords" content="Magento, Serbia, Srbija, eCommerc, elektronsko, poslovanje, online, trgovina, cms">
+<meta name="author" content="Bogdan Mandic, Bogdan Cvorovic, Nikola Kovacevic">
+<title>Magento SOAP API</title>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> 
+<link rel="stylesheet" type="text/css" href="web.css"  />
+<link rel='shortcut icon' href='slike/rs.ico' type='image/x-icon'/ >
+<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" /> 
+
+</head>
+<body background="slike/pozadina.jpg">
+	<header>
+		<div class="logo-img"><a href="index.html"> <img src="slike/logomali.jpg" alt="Magento logo umanjeni" /> </a></div>
+		<div class="menu-container">
+			<div  class="menu-item"><a href="index.html">Početna</a></div>
+	
+
+			<div class="menu-item "><a href="#" style="cursor:default;">Produkti</a>
+				<div class="dropdown-content">
+                	<a href="mce.html">Magento Community Edition</a>
+					<a href="mee.html">Magento Enterprise Edition</a>
+                    <a href="mece.html">Magento Enterprise Cloud Edition</a>
+					<a href="ma.html">Magento Analytics</a>
+				</div></div>
+                <div class="menu-item"><a href="#" style="cursor:default;">Industrija</a>
+                <div class="dropdown-content">
+                 <a href="b2b.html">Magento B2B</a>
+                <a href="mm.html">Modni Magento</a>
+				<a href="msb.html">Magento za mala preduzeća</a>
+                </div></div>
+			<div class="menu-item"><a href="kontakt.html">Kontakt</a>
+			</div>
+		</div>
+		<button type="button" onclick="showMobileMenu();" class="mobile-menu-button"> </button>
+	</header>
+	
+	<div class="body-content" id="center">
+		<div class="page-content">
+			<h2 class="caption">Magento SOAP API</h2>
+            <br>
+            <p>Magento SOAP (Simple Object Access Protocol) na grubom prevodu znači <em>Pristupni protokol jednostavnih objekata</em>. Ovaj API pruža mogućnosti da potpuno upravljate svojom elektronskom trgovinom; upravljajte klijentima, kategorijama, proizvodima, pa i prodajnim nalozima. Takođe, omogućava upravljanje i "potrošačkom korpom" i stanjem inventara. Magento SOAP podržava i <a href="https://en.wikipedia.org/wiki/XML-RPC" target="_blank">XML-RPC</a>, ali je podrazumevani protokol SOAP. Drugi Magentov API je <a href="rest.html">REST</a>.
+            </p>
+            <p>
+            U sledećoj tabeli možete pogledati metode koje pozivaju SOAP i XML-RPC protokoli preko Vašeg Magento klijenta:
+            </p>
+                <br>
+                <center><img src="slike/soap.jpg" alt="Magento API SOAP metode" /></center>
+                <br>
+               
+			<p>
+			Napomena 1: Za pozivanje ili višestruko pozivanje, ako nije navedena sesija, možete pozvati resurse koji nisu zaštićeni od ACL.
+            <br>
+            Napomena 2: Za višestruko pozivanje, ako se ne navede opcija "break", višestruko pozivanje će napraviti grešku.
+            </p>
+            <p>
+            U sledećoj tabeli možete pogledati globalne API greške koje se odnose na sve SOAP ili XML-RPC pozive:
+            </p>
+             <br>
+                <center><img src="slike/soap1.jpg" alt="Magento API SOAP greške" /></center>
+                <br>
+                <p>
+                Detaljnije pročitajte na zvaničnoj stranici <a href="http://devdocs.magento.com/guides/m1x/api/soap/introduction.html" target="_blank">Magento SOAP API</a>.
+                </p>
+                
+						</div>
+                        </div>
+
+	<footer>
+		<div class="footer-content">
+			<article>
+				<p id="arcpp">Sva prava zadržava Magento&#174; 2016&#169; <br />
+				Za više informacija, posetite nas putem socijalnih mreža, ili putem <a href="kontakt.html" target="_blank">kontakt</a> strane
+				</p>
+			</article>
+			<div class="footer-links" >
+				<div class="footer-menu-item"> <a href="https://www.facebook.com/magento" target="_blank"> <img src="slike/Social media/facebook.png" alt="Facebook" width="50px" height="50px" /> </a></div>
+				<div class="footer-menu-item"><a href="https://plus.google.com/+magento/posts" target="_blank"> <img src="slike/Social media/google+.JPG" alt="Google +" width="50px" height="50px" /></a> </div>
+				<div class="footer-menu-item"><a href="https://www.linkedin.com/start/join?trk=login_reg_redirect&session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fgroups%2F146360" target="_blank"> <img src="slike/Social media/linkedin.png" alt="Linkedin" width="50px" height="50px" /></a></div>
+				<div class="footer-menu-item"><a href="https://twitter.com/magento" target="_blank"> <img src="slike/Social media/twitter.JPG" alt="Twitter" width="50px" height="50px" /></a> </div> 
+				<div class="footer-menu-item"><a href="https://www.youtube.com/user/magentocommerce/featured" target="_blank"> <img src="slike/Social media/youtube.jpg" alt="Youtube" width="50px" height="50px" /></a> </div>
+			</div>
+		</div>		
+	</footer>
+	<div class="mobile-menu">
+			<div  class="mobile-menu-item"><a href="index.html">Pocetna</a></div>
+			<div class="mobile-menu-item "><a href="#" >Produkti</a></div>
+             <div class="mobile-menu-item hide"> 
+             		<a href="mce.html">Magento Community Edition</a>
+					<a href="mee.html">Magento Enterprise Edition</a>
+                    <a href="mece.html">Magento Enterprise Cloud Edition</a>
+					<a href="ma.html">Magento Analytics</a>
+                    </div>
+                    <div class="mobile-menu-item"><a href="#" style="cursor:default;">Industrija</a>
+                     <div class="mobile-menu-item hide">
+                <a href="b2b.html">Magento B2B</a>
+                <a href="mm.html">Modni Magento</a>
+				<a href="msb.html">Magento za mala preduzeća</a>
+                </div>
+			<div class="mobile-menu-item"><a href="kontakt.html">Kontakt</a></div>
+			<div class="mobile-menu-item"><a href="javascript:hideMobileMenu();">CLOSE</a></div>
+	</div>
+	<script>
+		window.onload = init;
+	 function init() {
+		$(".mobile-menu").hide();	
+	 }
+
+	 <!-- document.getElementById("clickMe").onclick = doFunction; -->
+	 function showMobileMenu() {
+		$(".mobile-menu").show();
+		$(".body-content").hide();
+		$(".footer-content").hide();
+		$(".mobile-menu-button").hide();
+	 }
+	 function hideMobileMenu() {
+		$(".mobile-menu").hide();
+		$(".body-content").show();
+		$(".footer-content").show();
+		$(".mobile-menu-button").show();
+	 }
+	</script>
+</body>
+</html>
