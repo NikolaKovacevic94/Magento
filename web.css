@@ -18,12 +18,6 @@
 	background-color: white;
 }
 
-#accordion h3 {
-	background-color: red;	
-	font-family: meni;
-	color:#F34810;
-}
-
 .soap {
 	width: 80%;
 	border: medium;	
@@ -33,9 +27,8 @@
 	text-align: justify;
 }
 
-.strong {
-	font-weight: bold;
-	background-color: red;	
+#strong {
+	font-weight: bold;	
 }
 
 .caption {
@@ -57,7 +50,6 @@
 	width:30%;
 	height:600px;
 	vertical-align:top;
-	margin-left: 30%;
 }
 
 .onama img 
@@ -74,7 +66,7 @@
 
 .onama:hover {
 	background-color:white;
-	
+	width:30%;
 }
 
 .onama:hover p {
@@ -206,8 +198,7 @@ header {
 	
 	/* min-height:1000px; */
 	/* background-color:#FAAA3C; */
-	/*background-color: #eb6625; */
-	background-color: #EC6E31;
+	background-color: #eb6625;
 }
 
 .page-content a {
